@@ -1,5 +1,7 @@
 import React from 'react';
+import Like from './Like';
 import './main.css';
+
 
 const Main = () => {
     return (
@@ -20,18 +22,23 @@ const Main = () => {
             <div className="more-articles">
                 <div className="card-container">
                     <img src="./img/animations.png" />
+                    <Like />
                 </div>
                 <div className="card-container">
                     <img src="./img/grid-design.jpg" />
+                    <Like />
                 </div>
                 <div className="card-container">
                     <img src="./img/svg.png" />
+                    <Like />
                 </div>
                 <div className="card-container">
                     <img src="./img/style.png" /> 
+                    <Like />
                 </div>
                 <div className="card-container">
                     <img src="./img/css-grid.png" /> 
+                    <Like />
                 </div>
             </div>
             <aside className="comments">
@@ -40,21 +47,21 @@ const Main = () => {
                     <p>
                         Photoshop is an integral component of our curriculum, both as a professional education facility that provides instruction to junior and senior high schools in digital media communications.
                     </p>
-                    <div className="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div className="rating"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
                 </div>
                 <div className="card">
                     <div className="card__img"><img src="./img/user-2.jpg" width="60" />Tiffany</div>
                     <p>
                         I'm a video maker and photographer, and I don't see an inappropriate scenario for this software. I don't deal strictly with graphics, for that you can work with Photoshop in combination with Illustrator, but for my work as a photographer it does everything.
                     </p>
-                    <div className="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <div className="rating"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star-half-alt"></i></div>
                 </div>
                 <div className="card">
                     <div className="card__img"><img src="./img/user-3.jpg" width="60" />John</div>
                     <p>
                         The graphic design department uses Adobe Photoshop to create and develop all the graphic content for our company, whether it is for advertising posters or for our social networks, it is a powerful tool that you can learn to use in a short time.
                     </p>
-                    <div className="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                    <div className="rating"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="far fa-star"></i></div>
                 </div>
             </aside>
         </main>

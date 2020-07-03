@@ -1,0 +1,36 @@
+.like {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    background-color: transparent;
+}
+
+.like:focus {
+    outline: none;
+}
+
+.like-full {
+    border: 0.3rem solid black;
+    padding: 1rem;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.like-empty {
+    border: 0.3rem solid var(--black-80);
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.fas.fa-heart, .far.fa-heart {
+    font-size: 4rem;
+}
+
+.far.fa-heart {
+    color: var(--black-80);
+}
+
+.fas.fa-heart {
+    color: var(--color-red);
+}
