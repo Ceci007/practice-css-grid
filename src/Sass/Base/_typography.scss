@@ -1,0 +1,35 @@
+.headline-2 {
+    font-size: 3.9rem;
+    color: var(--white-80);
+    font-weight: 300;
+}
+
+.headline-3 {
+    font-size: 2.6rem;
+    color: var(--black-60);
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    position: relative;
+    
+    &:before {
+        content: "";
+        height: 0.4rem;
+        width: 10rem;
+        background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 2rem);
+        border-radius: 2.5rem;
+    }
+}
+
+.italic-paragraph {
+    font-size: 26px;
+    color: var(--white-80);
+    font-weight: 100;
+    font-style: italic;
+}
+

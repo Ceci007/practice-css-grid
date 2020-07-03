@@ -1,0 +1,88 @@
+$bp-large: 75em; // 1200px
+$bp-medium: 48em;  // 768px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+
+.home {
+    width: 100%;
+}
+
+.hero {
+    padding-top: 12rem;
+    background-image: linear-gradient(60deg, var(--color-primary), var(--color-secondary));
+    height: 100vh;
+    width: 100%;
+    -webkit-clip-path: polygon(100% 0, 100% 58%, 58% 99%, 0 99%, 0 0);
+    clip-path: polygon(100% 0, 100% 58%, 58% 99%, 0 99%, 0 0);
+    position: relative;
+    z-index: -1;
+
+    @media only screen and (max-width: $bp-large) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        height: 670px;
+    } 
+
+    @media only screen and (max-width: $bp-large) {
+        height: 800px;
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100vh;
+    position: relative;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+    &__left {
+        padding: 5rem 0;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 100%;
+            padding: 5rem 2rem;
+        }
+    }
+
+    &__right {
+        padding: 5rem 0;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1000;
+
+       display: none;
+    }
+}
+
+.landing-right {
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    top: 16rem;
+    right: 7rem;
+    background-image: url("../../img/left-landing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media only screen and (max-width: $bp-large) {
+        position: relative;
+        display: grid;
+        margin: 0 auto;
+        top: 0;
+        right: 0;
+        margin-top: -0.6rem;
+        background-position: center;
+        width: 100%;
+        height: 50rem;
+        background-color: var(--dark-grey-1);
+    }
+}
+

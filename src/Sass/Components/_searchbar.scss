@@ -1,0 +1,51 @@
+$bp-largest: 75em; // 1200px
+$bp-large: 75em; // 1200px
+$bp-medium: 48em;  // 768px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+.search {
+    border: none;
+    background-color: var(--white-20);
+    border-radius: 3rem;
+    position: relative;
+
+    &__input {
+        border: none;
+        background-color: transparent;
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+        padding: 1.5rem 3rem;
+        width: 100%;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 20rem;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: var(--white-40);
+        }
+    }
+
+    & span {
+        width: 5.5rem;
+        height: 5.5rem;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    & i {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        color: var(--black-40);
+    }
+}
